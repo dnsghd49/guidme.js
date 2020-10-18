@@ -13,10 +13,10 @@ $(document).ready(function () {
     $(".saveBtn").on("click", function () {
         //this will log the user's input and save it to the local storage 
         console.log(this)
-        var text = $(this).siblings(".test").val();
+        var text = $(this).siblings(".userInput").val();
         var time = $(this).parent().attr("id");
         localStorage.setItem(time, text);
     })
 
-    $("#hour9 .test").val(localStorage.getItem("hour9"));   
+    $("#hour9 .userInput").val(localStorage.getItem("hour9"));   
 })
