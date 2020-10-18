@@ -4,9 +4,13 @@ $(document).ready(function () {
 
     // function for tracking the time for the current day for the past, present, and future
     function hourTracker() {
-        //get number of hrs
+        //Time now
         var currentHour = moment().hour();
 
+        $(".time-block").each(function() {
+            var pastHour = parseInt($(this).attr("id").split("hour")[1]);
+
+        })
     }
 
     // assign saveBtn to store the user's data
