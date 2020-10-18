@@ -17,6 +17,14 @@ $(document).ready(function () {
         var time = $(this).parent().attr("id");
         localStorage.setItem(time, text);
     })
-
+    //Bring back the saved data and output the data in page
     $("#hour9 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour10 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour11 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour12 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour1 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour2 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour3 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour4 .userInput").val(localStorage.getItem("hour9"));   
+    $("#hour5 .userInput").val(localStorage.getItem("hour9"));   
 })
