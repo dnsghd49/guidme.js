@@ -11,6 +11,12 @@ $(document).ready(function () {
 
     // assign saveBtn to store the user's data
     $(".saveBtn").on("click", function () {
+        //this will log the user's input and save it to the local storage 
         console.log(this)
+        var text = $(this).siblings(".test").val();
+        var time = $(this).parent().attr("id");
+        localStorage.setItem(time, text);
     })
+
+    $("#hour9 .test").val(localStorage.getItem("hour9"));   
 })
