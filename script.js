@@ -5,14 +5,14 @@ $(document).ready(function () {
     // function for tracking the time for the current day for the past, present, and future
     function hourTracker() {
         //get number of hrs
-        var currentHour = moment().hour()
+        var currentHour = moment().hour();
 
     }
 
     // assign saveBtn to store the user's data
     $(".saveBtn").on("click", function () {
         //this will log the user's input and save it to the local storage 
-        console.log(this)
+        console.log(this);
         var text = $(this).siblings(".userInput").val();
         var time = $(this).parent().attr("id");
         localStorage.setItem(time, text);
