@@ -8,3 +8,5 @@ Basic Info: This is the standard business hour schedule planner. The gray time b
 
 Screenshot:
 ![work-day-scheduler](https://user-images.githubusercontent.com/70901526/96391785-f8f51300-1187-11eb-8a86-e2f50748766b.PNG)
+
+![2](https://user-images.githubusercontent.com/70901526/96392238-7cfbca80-1189-11eb-93c7-980fd8ef0de1.PNG)
