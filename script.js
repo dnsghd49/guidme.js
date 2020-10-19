@@ -8,8 +8,26 @@ $(document).ready(function () {
         var currentHour = moment().hour();
 
         $(".time-block").each(function() {
-            var pastHour = parseInt($(this).attr("id").split("hour")[1]);
-
+            //the times on the page
+            var pageHour = parseInt($(this).attr("id").split("hour")[1]);
+            //if the current time pass the times on the page then, the past time blocks will become gray   
+            if (pageHour < currentHour) {
+                $(this).addClass("past");
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+            }
+            //if the current time and the block time are them same then, the time block will become red 
+            else if (pageHour === currentHour) {
+                $(this).removeClass("past");
+                $(this).removeClass("future");
+                $(this).addClass("present");
+            }
+            //if the current time has not yet pass the future time then. the time blocks for the future time will be green
+            else {
+                $(this).removeClass("past");
+                $(this).addClass("future");
+                $(this).removeClass("present");
+            }
         })
     }
 
