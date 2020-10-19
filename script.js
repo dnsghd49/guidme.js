@@ -30,6 +30,7 @@ $(document).ready(function () {
             }
         })
     }
+    hourTracker();
 
     // assign saveBtn to store the user's data
     $(".saveBtn").on("click", function () {
@@ -44,9 +45,9 @@ $(document).ready(function () {
     $("#hour10 .userInput").val(localStorage.getItem("hour10"));   
     $("#hour11 .userInput").val(localStorage.getItem("hour11"));   
     $("#hour12 .userInput").val(localStorage.getItem("hour12"));   
-    $("#hour1 .userInput").val(localStorage.getItem("hour1"));   
-    $("#hour2 .userInput").val(localStorage.getItem("hour2"));   
-    $("#hour3 .userInput").val(localStorage.getItem("hour3"));   
-    $("#hour4 .userInput").val(localStorage.getItem("hour4"));   
-    $("#hour5 .userInput").val(localStorage.getItem("hour5"));   
+    $("#hour13 .userInput").val(localStorage.getItem("hour13"));   
+    $("#hour14 .userInput").val(localStorage.getItem("hour14"));   
+    $("#hour15 .userInput").val(localStorage.getItem("hour15"));   
+    $("#hour16 .userInput").val(localStorage.getItem("hour16"));   
+    $("#hour17 .userInput").val(localStorage.getItem("hour17"));   
 })
